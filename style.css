@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+display: flex;
+background-color: #218c74;
+height: 50px;
+align-items: end;
+}
+.selection{
+    width: 50px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.active{
+    background-color: #ecf0f1;
+    color: #218c74;
+}
+
+.info{
+    background-color: #ecf0f1;
+    display: flex;
+    padding-bottom: 5px;
+}
+.formula{
+    width: 500px;
+}
+.formula>img{
+    width: 20px;
+}
+.for-box{
+background-color: white;
+width: 100px;
+}
+
+#cell-name{
+    background-color: white;
+    width: 80px;
+    text-align: center;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+#options{
+    background-color:#ecf0f1;
+    height: 55px;
+}
+#header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 2000;
+    
+
+}
+#header>b{
+    min-width: 100px;
+    border: 1px solid #dfe4e9;
+    text-align: center;
+    padding: 10px 0px;
+    top: 0;
+    background-color: #ecf0f1;
+}
+.no_head{
+    min-width: 50px;
+    padding: 10px 0;
+    border: 1px solid #dfe4e9;
+    background-color: gray;
+}
+.sl-no{
+    min-width: 50px;
+    padding: 10px 0;
+    border: 1px solid #dfe4e9;
+    background-color: #ecf0f1;
+}
+
+#body{
+    /* overflow-y: scroll;   */
+}
+
+.row{
+    display: flex;
+}
+.row>div{
+    min-width: 100px;
+    padding: 10px 0;
+    border: 1px solid #dfe4e9;
+}
+
+.row>b:first-child{
+    text-align:center;
+    position: sticky;
+
+}
+.all-body{
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 95vw;
+    margin-left: 10px;
+    
+}
+#sl_container{
+position: sticky;
+left: 0px;
+text-align: center;
+
+}
+.cell_container{
+    display: flex;
+}
