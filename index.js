@@ -1,6 +1,6 @@
 const header = document.getElementById("header");
 const body = document.getElementById("body");
-let activeCell = null;
+
 
 
 for (let i=65;i<=90;i++){
@@ -48,6 +48,3 @@ for (let i = 1; i <= 100; i++) {
 
 
 
-function OncellFocus(e){
-    activeCell = e.target.id;
-}

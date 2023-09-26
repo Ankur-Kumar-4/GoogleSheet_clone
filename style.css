@@ -22,17 +22,19 @@ align-items: end;
 .info{
     background-color: #ecf0f1;
     display: flex;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .formula{
     width: 500px;
 }
-.formula>img{
+.info>img{
     width: 20px;
+    margin-left:16px ;
 }
 .for-box{
 background-color: white;
-width: 100px;
+width: 88vw;
+margin-left: 16px;
 }
 
 #cell-name{
@@ -78,9 +80,6 @@ width: 100px;
     background-color: #ecf0f1;
 }
 
-#body{
-    /* overflow-y: scroll;   */
-}
 
 .row{
     display: flex;
@@ -97,12 +96,9 @@ width: 100px;
 
 }
 .all-body{
-    margin-top: 10px;
     overflow-y: scroll;
     height: 70vh;
-    width: 95vw;
-    margin-left: 10px;
-    
+    width: 100vw;  
 }
 #sl_container{
 position: sticky;
