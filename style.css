@@ -68,6 +68,8 @@ width: 100px;
     padding: 10px 0;
     border: 1px solid #dfe4e9;
     background-color: gray;
+    position: sticky;
+    left: 0px;
 }
 .sl-no{
     min-width: 50px;
