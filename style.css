@@ -33,8 +33,10 @@ align-items: end;
 }
 .for-box{
 background-color: white;
-width: 88vw;
+width: 87vw;
 margin-left: 16px;
+align-content: center;
+padding: 2px;
 }
 
 #cell-name{
@@ -48,6 +50,26 @@ margin-left: 16px;
 #options{
     background-color:#ecf0f1;
     height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+#options>div,.font-color{
+  
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#options>div:hover{
+   background-color:#d0d8e0 ;
+}
+.font-color:hover{
+   background-color:#d0d8e0 ;
+}
+
+img{
+    width: 16px;
 }
 #header{
     display: flex;
@@ -97,7 +119,7 @@ margin-left: 16px;
 }
 .all-body{
     overflow-y: scroll;
-    height: 70vh;
+    height: 69vh;
     width: 100vw;  
 }
 #sl_container{
@@ -108,4 +130,37 @@ text-align: center;
 }
 .cell_container{
     display: flex;
+}
+.active-option{
+    background-color: #d0d8e0;
+}
+#color-picker,#cell-color{
+    width: 0;
+    height: 0;
+}
+#add_sheet_container{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 4px;
+
+}
+#addSheet_btn>img{
+width: 22px;
+}
+#addSheet_btn{
+    cursor: pointer;
+    padding:2px 1px 1px 4px;
+}
+#addSheet_btn:hover{
+    background-color:#d0d8e0 ;
+}
+.sheet{ 
+    margin-left: 5px;
+    padding: 3px 20px 10px 20px;
+}
+.sheet>span{
+font-weight: 700;
+font-size: 14px;
+border-bottom: 4px solid black;
 }

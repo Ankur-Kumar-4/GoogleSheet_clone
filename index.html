@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Sheets</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="shortcut icon" href="assets\icons8-google-sheets-240.png" type="image/x-icon">
     
 
@@ -21,13 +22,43 @@
 
 <div id="options">
     
+    <div id="bold"  onclick="onClickBold(this)"><img src="assets\bold-text-option.png" alt=""></div>
+
+    <div id="italic" onclick="onClickItalic(this)"><img src="assets\italic.png" alt=""></div>
+    
+    <div id="underline" onclick="onClickUnderline(this)"><img src="assets\underline.png" alt=""></div>
+
+
+
+    <div id="align-left" class="text_align active-option" data-value="left" onclick="onClickTextAlign(this)"><img src="assets\align-left (1).png" alt=""></div>
+    <div id="align-center" class="text_align" data-value="center"  onclick="onClickTextAlign(this)"><img src="assets\format.png" alt=""></div>
+
+    <div id="align-right" class="text_align" data-value="right"  onclick="onClickTextAlign(this)"><img src="assets\align-right.png" alt=""></div>
+
+
+    <label for="color-picker" class="font-color">
+      
+            <img src="assets\font.png" alt="">
+        
+        <input type="color" id="color-picker" onchange="changeTextColor(this)">
+    </label>
+
+    <label for="cell-color" class="font-color">
+        
+        <img src="assets\bucket.png" alt="">
+
+        <input type="color" id="cell-color" onchange="changeBgColor(this)">
+    </label>
+    
+   
 </div>
+
 
 <div class="info">
     <div id="cell-name">A1</div>
 
     <img src="https://img.icons8.com/ios/50/000000/formula-fx.png" alt="">
-    <div class="for-box"></div>
+    <div class="for-box" contentEditable="true"></div>
 </div>
   
 
@@ -63,13 +94,17 @@
 
 
 
-<footer>
-    sdsdfg
+<footer id="add_sheet_container">
+
+    <div id="addSheet_btn"><img src="assets\add.png" alt=""></div>
+
+    
+
 </footer>
 
 
 <script src="options.js"></script>
-
 <script src="index.js"></script>    
+
 </body>
 </html>
